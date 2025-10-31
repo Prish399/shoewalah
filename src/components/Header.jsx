@@ -22,10 +22,6 @@ const Header = () => {
               <a key={link.name} href={link.href} className="text-gray-600 hover:text-blue-600 transition-colors duration-300">{link.name}</a>
             ))}
           </nav>
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">Log In</a>
-            <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">Sign Up</a>
-          </div>
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-blue-600 focus:outline-none">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -40,9 +36,6 @@ const Header = () => {
               {navLinks.map((link) => (
                 <a key={link.name} href={link.href} className="text-gray-600 hover:text-blue-600 py-2 px-4 rounded-md transition-colors duration-300">{link.name}</a>
               ))}
-              <hr className="my-2" />
-              <a href="#" className="text-gray-600 hover:text-blue-600 py-2 px-4 rounded-md transition-colors duration-300">Log In</a>
-              <a href="#" className="bg-blue-600 text-white text-center px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 mt-2">Sign Up</a>
             </nav>
           </div>
         )}
